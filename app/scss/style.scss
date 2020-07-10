@@ -1,12 +1,83 @@
-html {
-  box-sizing: border-box;
+@import "vars";
+@import "global";
+
+.header__top {
+    background-color: $grey;
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.header__top {
+    padding: 25px 0;
 }
-.box{
+.header__top-inner {
     display: flex;
-    transition: all .3s ;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__avatar {
+    display: flex;
+    align-items: center;
+}
+.header__avatar-naming {
+    padding-left: 20px;
+}
+.header__avatar-name {
+    font-weight: 700;
+}
+.header__avatar-price {
+    color: $blue;
+}
+.header__btn {
+    button {
+        border: none;
+        background-color: $blue;
+        color: #fff;
+        padding: 10px 17px;
+        border-radius: 20px;
+    }
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.header__menu-list {
+    display: flex;
+    justify-content: start;
+    li {
+        & + li {
+            margin-left: 30px;
+        }
+    }
+    a {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #333333;
+    }
+}
+.header__menu-search {
+    width: 300px;
+    form {
+        position: relative;
+        
+    }
+    input {
+        padding: 10px 80px 10px 10px;
+        border-radius: 20px;
+        width: 100%;
+        border: 1px solid #dee3e9;
+        outline: none;
+        &::placeholder{
+            padding: 0 190px 0 0px;
+        }
+    }
+    button{
+        padding: 10px;
+        border-radius: 20px;
+        width: 70px;
+        position: absolute;
+        border: 1px solid #dee3e9;
+        right: 0;
+        background-color: $blue;
+        top: -1px;
+    }
 }
