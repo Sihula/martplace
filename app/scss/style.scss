@@ -87,9 +87,7 @@
 // ----------------END---SEARCH
 
 // ----------------START---SEARCH
-.search {
-  margin-bottom: 100px;
-}
+
 .search__inner {
   position: relative;
   text-align: center;
@@ -193,6 +191,7 @@
   background-color: transparent;
   border-left: none;
   border-radius: 4px;
+  outline: none;
   &::after {
     content: "";
     background-image: url(../images/icons/chevron-down.png);
@@ -209,7 +208,8 @@
     cursor: pointer;
   }
 }
-.kurwa {
+
+.serch__down {
   margin-left: 50px;
 }
 .serch__inner-box1,
@@ -235,11 +235,183 @@
 
 // ----------------END---SEARCH
 
-// ----------------START---SEARCH
-// ----------------END---SEARCH
+// ----------------START---Info
+.info {
+  background-color: #fff;
+}
+.info__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 180px;
+  padding-bottom: 120px;
+}
+.info__page {
+  max-width: 360px;
+  width: 400px;
+  text-align: center;
+  align-items: center;
+  transition: all 0.3s;
+  padding-top: 60px;
+  &:hover {
+    background-color: #fff;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  }
+}
+.info__title {
+  font-size: 24px;
+  -webkit-filter: 500;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+.info__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #555555;
+  padding: 0 35px 50px;
+}
+.info__img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
 
-// ----------------START---SEARCH
-// ----------------END---SEARCH
+// ----------------END---info
+
+// ----------------START---weekly slider
+.slider__featured {
+  background-color: $grey;
+  padding-bottom: 50px;
+}
+.slider-inner__wrap {
+  padding-top: 120px;
+}
+
+.slider-inner__bar {
+  height: 110px;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 50px;
+}
+.slider-inner__bar-title {
+  font-size: 30px;
+  line-height: 28px;
+  font-weight: 500;
+  padding: 40px 0 0 30px;
+}
+.slider-inner__box {
+  display: flex;
+}
+.slider-inner__img {
+  width: 550px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slider-inner__info {
+  width: 600px;
+  height: 450px;
+  padding: 50px 60px 20px;
+  background-color: #fff;
+  margin: 0;
+}
+.slider-inner__info-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.slider-inner__author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.slider-inner__name {
+  font-size: 24px;
+  font-weight: 500;
+  padding-left: 40px;
+  position: relative;
+  color: #000;
+  &::before {
+    content: "";
+    background-image: url(../images/icons/avatar.png);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+  }
+}
+.slider-inner__work {
+  font-size: 15px;
+  color: $pur;
+  padding-left: 30px;
+  position: relative;
+  &::before {
+    content: "";
+    background-image: url(../images/icons/wpress.png);
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 10px;
+  }
+}
+.slider-inner__info-text {
+  font-size: 16px;
+  line-height: 30px;
+  color: #555555;
+  margin-bottom: 30px;
+}
+.slider-inner__plagins {
+  display: flex;
+  margin-bottom: 45px;
+  li {
+    padding: 5px;
+    border-radius: 30px;
+    background-color: $grey;
+  }
+  li + li {
+    margin-left: 20px;
+  }
+}
+.slider-inner__info-bottom {
+  padding: 50px 0;
+  border-top: 1px solid #555555;
+}
+.slider-inner__info-price {
+  padding: 5px 15px;
+  border-radius: 30px;
+  background-color: $blue;
+  display: inline-block;
+  color: $text;
+}
+.slider-inner__box {
+  display: flex !important;
+  position: relative;
+}
+.slider-top {
+  button {
+    position: absolute;
+    top: -117px;
+    right: 100px;
+    border: none;
+    background-color: $pur;
+    padding: 15px 20px;
+    border-radius: 24px;
+    outline: none;
+    &.slick-next {
+      position: absolute;
+      right: 73px;
+      padding-left: 40px;
+    }
+    &.slick-prev {
+      padding-right: 40px;
+    }
+  }
+}
+// ----------------END---weekly slider
 
 // ----------------START---SEARCH
 // ----------------END---SEARCH
