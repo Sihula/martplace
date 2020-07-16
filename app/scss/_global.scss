@@ -13,6 +13,8 @@ html {
 a {
   display: inline-block;
   text-decoration: none;
+  color: #000;
+  cursor: pointer;
 }
 ul,
 li {
@@ -31,6 +33,7 @@ body {
   margin: 0 auto;
 }
 .container-fluid {
+  width: 1920px;
   max-width: 100%;
   margin: 0 auto;
 }
